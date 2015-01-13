@@ -1,0 +1,75 @@
+# PUBLIC CONFIG
+name: 'thunk-redis-coffee'
+version: '0.5.0'
+description: 'A redis client with pipelining, rely on thunks.'
+author: [
+  'Yan Qing <admin@zensh.com>'
+]
+Keywords: [
+  'redis'
+  'redis client'
+  'database'
+  'thunk'
+  'thunks'
+  'generator'
+  'promise'
+  'pipelining'
+]
+main: 'index.js'
+license: 'MIT'
+
+# BOWER CONFIG
+bower:
+  dependencies: []
+  devDependencies: []
+
+# NPM CONFIG
+npm:
+  engines:
+    node: '>= 0.10.0'
+  homepage: 'https://github.com/thunks/thunk-redis'
+  repository:
+    type: 'git'
+    url: 'git://github.com/thunks/thunk-redis.git'
+  bugs:
+    url: 'https://github.com/thunks/thunk-redis/issues'
+  scripts:
+    test: 'node --harmony `which gulp` mocha'
+  dependencies: [
+    'respjs'
+    'thunks'
+  ]
+  devDependencies: [
+    'bluebird'
+    'del'
+    'coffee-script'
+    'gulp'
+    'run-sequence'
+    'gulp-sequence'
+    'gulp-coffee'
+    'gulp-mocha'
+    'jsonkit'
+    'mocha'
+    'should'
+  ]
+  ignore: [
+    '**/.*'
+    'node_modules'
+    'benchmark'
+    'test'
+    'examples'
+    'gulpfile.js'
+  ]
+
+# NPB CONFIG
+npb:
+
+# -- build tools --
+#  build: 'gulp'  # default
+#  build: 'grunt'
+
+#  bower:
+#    root_allow: true
+  npm:
+    commander: 'npm' # default
+    # commander: 'cnpm'

@@ -1,0 +1,59 @@
+{
+  "name": "thunk-redis-coffee",
+  "version": "0.5.0",
+  "description": "A redis client with pipelining, rely on thunks.",
+  "author": [
+    "Yan Qing <admin@zensh.com>"
+  ],
+  "Keywords": [
+    "redis",
+    "redis client",
+    "database",
+    "thunk",
+    "thunks",
+    "generator",
+    "promise",
+    "pipelining"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "homepage": "https://github.com/thunks/thunk-redis",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thunks/thunk-redis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thunks/thunk-redis/issues"
+  },
+  "scripts": {
+    "test": "node --harmony `which gulp` mocha"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "benchmark",
+    "test",
+    "examples",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "respjs": "^0.4.3",
+    "thunks": "^2.7.1"
+  },
+  "devDependencies": {
+    "bluebird": "^2.6.4",
+    "coffee-script": "^1.8.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-coffee": "^2.2.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-sequence": "^0.3.1",
+    "jsonkit": "^0.3.2",
+    "mocha": "^2.1.0",
+    "run-sequence": "^1.0.2",
+    "should": "^4.5.1"
+  }
+}
